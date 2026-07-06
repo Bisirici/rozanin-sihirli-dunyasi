@@ -453,6 +453,33 @@ def render_turkce_game():
     """Çoktan seçmeli, kategorili, seri takipli ve müzikli Türkçe Kelime Oyunu"""
     st.subheader("📘 Türkçe Kelime Dünyası")
 
+    # 📱 IPHONE İÇİN ŞIKLARI PARLATMA VE KOYULAŞTIRMA RENKLERİ
+    st.markdown("""
+    <style>
+        /* Şıkların metin renklerini koyu lacivert yapıp görünür kılıyoruz */
+        div[data-testid="stMarkdownContainer"] p {
+            color: #1A202C !important;
+            font-weight: bold !important;
+            font-size: 18px !important;
+        }
+        /* Şık kutularını belirginleştiriyoruz */
+        div[data-testid="stRadio"] label {
+            background-color: #FFFFFF !important;
+            padding: 12px 15px !important;
+            border-radius: 12px !important;
+            border: 2px solid #CBD5E0 !important;
+            margin-bottom: 8px !important;
+            display: flex !important;
+            align-items: center !important;
+        }
+        /* Seçilen şıkkın arka planını mavi yapıyoruz */
+        div[data-testid="stRadio"] label[data-checked="true"] {
+            border-color: #3182CE !important;
+            background-color: #EBF8FF !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
     # --- ÜST AYAR ÇUBUĞU: Müzik ve Kategori Seçimi (veli kontrolü için) ---
     ayar_col1, ayar_col2 = st.columns([1, 2])
     with ayar_col1:
