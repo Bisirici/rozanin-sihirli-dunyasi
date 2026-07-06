@@ -75,7 +75,7 @@ QUESTION_BANK = {
             ("Güneş'in battığı yön hangisidir? 🌇", "Batı"),
             ("Pusulada kuzeyi gösteren harf hangisidir? 🧭", "K"),
             ("Yeryüzünün büyük bölümünü kaplayan tuzlu su kütlesine ne denir? 🌊", "Okyanus"),
-            ("İki kıtayı birbirinden ayıran dar su geçidine ne ad verilir? 🚢", "Boğaz")
+            ("İki kıtayı birbirinden ayıran dar su geçidine ne ad verilir? 🚢", "Boğaz"),
             ("İki kere iki kaç eder? ➕", "Dört"),
             ("Bir elinde 5, diğer elinde 5 parmak vardır. Toplam kaç parmak vardır? ✋", "On"),
             ("Haftada kaç gün vardır? 📅", "Yedi"),
