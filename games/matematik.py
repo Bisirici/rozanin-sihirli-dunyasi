@@ -185,6 +185,30 @@ def render_math_game():
     """Çoktan seçmeli, seviyeli, seri takipli, müzikli ve 100 puan kutlamalı Matematik Sihirbazı"""
     st.subheader("🧮 Matematik Sihirbazı")
 
+    # 📱 IPHONE İÇİN ŞIKLARI PARLATMA VE KOYULAŞTIRMA RENKLERİ
+    st.markdown("""
+    <style>
+        div[data-testid="stMarkdownContainer"] p {
+            color: #1A202C !important;
+            font-weight: bold !important;
+            font-size: 18px !important;
+        }
+        div[data-testid="stRadio"] label {
+            background-color: #FFFFFF !important;
+            padding: 12px 15px !important;
+            border-radius: 12px !important;
+            border: 2px solid #CBD5E0 !important;
+            margin-bottom: 8px !important;
+            display: flex !important;
+            align-items: center;
+        }
+        div[data-testid="stRadio"] label[data-checked="true"] {
+            border-color: #667eea !important;
+            background-color: #FAF5FF !important;
+        }
+    </style>
+    """, unsafe_allow_html=True)
+
     # --- ÜST AYAR ÇUBUĞU: Müzik ve İşlem Seçimi (veli kontrolü için) ---
     ayar_col1, ayar_col2 = st.columns([1, 2])
     with ayar_col1:
